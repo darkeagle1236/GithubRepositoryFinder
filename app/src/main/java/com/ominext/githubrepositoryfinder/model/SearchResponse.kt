@@ -2,8 +2,9 @@ package com.ominext.githubrepositoryfinder.model
 
 
 import com.google.gson.annotations.SerializedName
+import io.realm.RealmObject
 
-data class SearchResponse(
+open class SearchResponse(
     @SerializedName("incomplete_results")
     var incompleteResults: Boolean,
     @SerializedName("items")

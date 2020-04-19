@@ -2,16 +2,17 @@ package com.ominext.githubrepositoryfinder.model
 
 
 import com.google.gson.annotations.SerializedName
+import io.realm.RealmObject
 
-data class License(
+open class License(
     @SerializedName("key")
-    var key: String,
+    var key: String ="",
     @SerializedName("name")
-    var name: String,
+    var name: String ="",
     @SerializedName("node_id")
-    var nodeId: String,
+    var nodeId: String ="",
     @SerializedName("spdx_id")
-    var spdxId: String,
+    var spdxId: String ="",
     @SerializedName("url")
-    var url: String
-)
+    var url: String =""
+):RealmObject()
